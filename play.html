@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Mobil Delvac - Trivia</title>
+    <link rel="shortcut icon" type="image/x-icon"  href="favicon.ico" />
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header>
+      <div class="text-center"><a href="#"><span class="logo"></span></a></div>
+      <a href="#" class="bases">BASES LEGALES</a>
+    </header>
+    <section class="questions">
+      <div class="container">
+        <!-- Nav tabs 
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a href="#q1" aria-controls="q1" role="tab" data-toggle="tab">1</a></li>
+          <li role="presentation"><a href="#q2" aria-controls="q2" role="tab" data-toggle="tab">2</a></li>
+          <li role="presentation"><a href="#q3" aria-controls="q3" role="tab" data-toggle="tab">3</a></li>
+          <li role="presentation"><a href="#q4" aria-controls="q4" role="tab" data-toggle="tab">4</a></li>
+        </ul>-->
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a data-cual="1">1</a></li>
+          <li role="presentation"><a data-cual="2">2</a></li>
+          <li role="presentation"><a data-cual="3">3</a></li>
+          <li role="presentation"><a data-cual="4"><span class="icon-trofeo"></span></a></li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane in active" id="q1">
+            <div class="text-center"><h2>La picada de Torofrut queda en</h2></div>
+            <div class="radio">
+              <label data-correcta="1">
+                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                <span class="letter">A</span>
+                <span class="content">La Ruta 68</span>
+              </label>
+            </div>
+            <div class="radio">
+              <label data-correcta="0">
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                <span class="letter">B</span>
+                <span class="content">La Ruta 5</span>
+              </label>
+            </div>
+            <div class="radio">
+              <label data-correcta="0">
+                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                <span class="letter">C</span>
+                <span class="content">La Autopista del Sol</span>
+              </label>
+            </div>
+            <div class="text-center">
+              <a href="#q2" aria-controls="q2" role="tab" data-toggle="tab" class="el-btn btn-continue" data-activar="2"></a>
+            </div>
+          </div>
+          <!-- Pregunta 2 -->
+          <div role="tabpanel" class="tab-pane fade" id="q2">
+            <div class="text-center"><h2>Un Camión de 3 ejes y Dobletorque se denomina</h2></div>
+            <div class="radio">
+              <label data-correcta="1">
+                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                <span class="letter">A</span>
+                <span class="content">6x4</span>
+              </label>
+            </div>
+            <div class="radio">
+              <label data-correcta="0">
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                <span class="letter">B</span>
+                <span class="content">2x2</span>
+              </label>
+            </div>
+            <div class="radio">
+              <label data-correcta="0">
+                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                <span class="letter">C</span>
+                <span class="content">4x2</span>
+              </label>
+            </div>
+            <div class="text-center">
+              <a href="#q3" aria-controls="q3" role="tab" data-toggle="tab" class="el-btn btn-continue" data-activar="3"></a>
+            </div>
+          </div>
+          <!-- Pregunta 3 -->
+          <div role="tabpanel" class="tab-pane fade" id="q3">
+            <div class="text-center"><h2>¿Cuáles son las principales características del aceite Sintético de Mobil Delvac?</h2></div>
+            <div class="radio">
+              <label data-correcta="0">
+                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                <span class="letter">A</span>
+                <span class="content">Mejor rendimiento en temperaturas bajas</span>
+              </label>
+            </div>
+            <div class="radio">
+              <label data-correcta="0">
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                <span class="letter">B</span>
+                <span class="content">Estabilidad en las temperaturas altas</span>
+              </label>
+            </div>
+            <div class="radio">
+              <label data-correcta="0">
+                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                <span class="letter">C</span>
+                <span class="content">Mejora de la oxidación y estabilidad térmica</span>
+              </label>
+            </div>
+            <div class="radio">
+              <label data-correcta="0">
+                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                <span class="letter">D</span>
+                <span class="content">Excelente protección contra el desgaste</span>
+              </label>
+            </div>
+            <div class="radio">
+              <label data-correcta="1">
+                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                <span class="letter">E</span>
+                <span class="content">Todas las anteriores</span>
+              </label>
+            </div>
+            <div class="text-center">
+              <a href="#q4" aria-controls="q4" role="tab" data-toggle="tab" class="el-btn btn-continue" data-activar="4"></a>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="q4">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <div class="text-center">
+                  <h2>¡respondiste de forma correcta las 3 preguntas!</h2>
+                  <p>Para finalizar tu participación y ganar una de las entradas dobles debes completar sl siguiente formulario.</p>
+                </div>
+                <div class="formu">
+                  <input type="text" class="form-control" placeholder="NOMBRE">
+                  <input type="text" class="form-control" placeholder="EMAIL">
+                  <input type="text" class="form-control" placeholder="CELULAR">
+                  <div class="text-center">
+                    <input class="btn-enviar" type="submit" value="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="sticky-footer">
+        <div class="footer-topi"></div>
+        <div class="container">
+          <div class="col-sm-4">
+            <img src="images/logote-footer.png" alt="Mobil Delvac">
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

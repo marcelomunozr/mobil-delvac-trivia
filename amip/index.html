@@ -1,0 +1,274 @@
+<html>
+<head>
+<style>
+
+.overlay-modal{
+    font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    z-index: 1000; 
+    display: block;
+}
+.container.modal {
+    width: 402px;
+    margin: 0 auto 0;
+    top: 60px;
+    background: #eeeeee;
+    position: relative;
+    z-index: 20;
+    border: 1px solid #e80932;
+    border-radius: 12px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -o-border-radius: 12px;
+    padding: 20px 0 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+#modal2 .container.modal {
+    width: 870px;
+    overflow: hidden;
+    border: none;
+    padding: 0;
+
+}
+#modal2 .container.modal .des-borde{
+    border-radius: 12px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.container.modal h2{
+    display: inline-block;
+    width: auto;
+    padding: 0 20px 5px;
+    margin:5px 0 10px 0;
+    font-size: 20px;
+}
+.container.modal p{
+    padding: 0;
+    margin-bottom: 5px;
+    font-size: 18px;
+    position: relative;
+    text-align: center;
+}
+.container.modal p strong{
+    text-decoration: underline;
+}
+#modal3 .container.modal {
+    width: 870px;
+    overflow: hidden;
+    width: 840px;
+    overflow: hidden;
+    text-align: left;
+    padding: 20px 40px;
+}
+#modal3 .container.modal p{
+    text-align: left;
+    font-size: 15px;
+    margin-bottom: 15px;    
+}
+#modal3 .container.modal h3{
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+#modal3 .container.modal p strong{
+    font-weight: 600;
+    text-decoration: none;
+}
+.container.modal.bg-white{
+    background: #fff!important;
+}
+img.margina{
+    margin-top: 30px;
+}
+img.flotante{
+    float: left;
+    width: 50%;
+}
+.close-modal{
+    width: 25px;
+    height: 25px;
+    line-height: 21px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    background: #fff;
+    position: absolute;
+    border: 2px solid #e80932;
+    color: #e80932;
+    border-radius: 100px;
+    font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+    right: 15px;
+    margin-left: 10px;
+    top: 15px;
+    margin-top: 0;
+    cursor: pointer;
+}
+#modal2 .container.modal .close-modal{
+    color: #33ab66;
+    border-color: #33ab66;
+}
+a.the-btn{
+    margin-top: 15px;
+    background: #48b5e4;
+    padding: 10px 40px;
+    color: #fff;
+    font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+    display: inline-block;
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    font-style: italic;
+    cursor: pointer;
+}
+.clearfix{
+    clear: both;
+}
+#countdown{
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+#countdown p {
+  display: inline-block;
+  padding: 8px 15px;
+  background: #ffffff;
+  border-radius: 3px;
+  margin: 0 0 20px;
+  font-size: 44px;
+}
+#countdown p span{
+    display: block;
+    float: none;
+    font-size: 12px;
+}
+#countdown p.days:after{
+    content: "días";
+    display: block;
+    float: none;
+    position: relative;
+    font-size: 12px;
+}
+#countdown p.hours:after{
+    content: "horas";
+    display: block;
+    float: none;
+    position: relative;
+    font-size: 12px;
+}
+#countdown p.minutes:after{
+    content: "min.";
+    display: block;
+    float: none;
+    position: relative;
+    font-size: 12px;
+}
+#countdown p.seconds:after{
+    content: "seg.";
+    display: block;
+    float: none;
+    position: relative;
+    font-size: 12px;
+}
+</style>
+<script src="//code.jquery.com/jquery.js"></script>
+<script src="jquery.countdown.min.js"></script>
+</head>
+<body>
+
+
+        <div class="overlay-modal" id="modal0">
+            <div class="container modal">
+                <div class="close-modal" id="hide0">x</div>
+                <p class="margina" style="font-size: 26px;">Faltan</p>
+<div id="countdown">
+    <p class="days">00</p>
+    <p class="hours">00</p>
+    <p class="minutes">00</p>
+    <p class="seconds">00</p>
+    <div class="clearfix"></div>
+</div>
+                <img src="http://www.amipass.com/wp-content/themes/amipass-responsive/img/2016-10-19/descarga-novo.jpg" alt="Descarga tu App de Amipass">
+                <p>descárgala de:</p>
+                <a href="https://itunes.apple.com/cl/app/app-amipass/id1010874641" target="_blank"><img src="http://www.amipass.com/wp-content/themes/amipass-responsive/img/2015-11-06/app-store.png" alt="" class="flotante"></a>
+                <a href="https://play.google.com/store/apps/details?id=com.amipass.app" target="_blank"><img src="http://www.amipass.com/wp-content/themes/amipass-responsive/img/2015-11-06/play.png" alt="" class="flotante"></a>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+<script type="text/javascript">
+(function (e) {
+  e.fn.countdown = function (t, n) {
+  function i() {
+    eventDate = Date.parse(r.date) / 1e3;
+    currentDate = Math.floor(e.now() / 1e3);
+    if (eventDate <= currentDate) {
+      n.call(this);
+      clearInterval(interval)
+    }
+    seconds = eventDate - currentDate;
+    days = Math.floor(seconds / 86400);
+    seconds -= days * 60 * 60 * 24;
+    hours = Math.floor(seconds / 3600);
+    seconds -= hours * 60 * 60;
+    minutes = Math.floor(seconds / 60);
+    seconds -= minutes * 60;
+    days == 1 ? thisEl.find(".timeRefDays").text("day") : thisEl.find(".timeRefDays").text("days");
+    hours == 1 ? thisEl.find(".timeRefHours").text("hour") : thisEl.find(".timeRefHours").text("hours");
+    minutes == 1 ? thisEl.find(".timeRefMinutes").text("minute") : thisEl.find(".timeRefMinutes").text("minutes");
+    seconds == 1 ? thisEl.find(".timeRefSeconds").text("second") : thisEl.find(".timeRefSeconds").text("seconds");
+    if (r["format"] == "on") {
+      days = String(days).length >= 2 ? days : "0" + days;
+      hours = String(hours).length >= 2 ? hours : "0" + hours;
+      minutes = String(minutes).length >= 2 ? minutes : "0" + minutes;
+      seconds = String(seconds).length >= 2 ? seconds : "0" + seconds
+    }
+    if (!isNaN(eventDate)) {
+      thisEl.find(".days").text(days);
+      thisEl.find(".hours").text(hours);
+      thisEl.find(".minutes").text(minutes);
+      thisEl.find(".seconds").text(seconds)
+    } else {
+      alert("Invalid date. Example: 30 Tuesday 2013 15:50:00");
+      clearInterval(interval)
+    }
+  }
+  var thisEl = e(this);
+  var r = {
+    date: null,
+    format: null
+  };
+  t && e.extend(r, t);
+  i();
+  interval = setInterval(i, 1e3)
+  }
+  })(jQuery);
+  $(document).ready(function () {
+  function e() {
+    var e = new Date;
+    e.setDate(e.getDate() + 60);
+    dd = e.getDate();
+    mm = e.getMonth() + 1;
+    y = e.getFullYear();
+    futureFormattedDate = mm + "/" + dd + "/" + y;
+    return futureFormattedDate
+  }
+  $("#countdown").countdown({
+    date: "25 October 2016 08:00:00", // Change this to your desired date to countdown to
+    format: "on"
+  });
+});
+</script>
+</body>
+</html>
+
